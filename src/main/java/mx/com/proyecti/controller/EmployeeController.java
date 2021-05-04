@@ -25,6 +25,11 @@ public class EmployeeController {
 	
 	//crear los metodos de mis servicios(operaciones) de mi servicio web REST
 	
+	@GetMapping("/employees/bySalary") // utilizar operacion http get
+	public List<Employee> findBySalary() {
+		return employeeService.findBySalary();
+	}
+	
 	@GetMapping("/employees") // utilizar operacion http get
 	public List<Employee> getAllEmployee() {
 		// TODO Auto-generated method stub

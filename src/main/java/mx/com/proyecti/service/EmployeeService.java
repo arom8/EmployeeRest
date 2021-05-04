@@ -11,6 +11,7 @@ public interface EmployeeService {
 	public boolean updateEmployee(Employee employee);
 	public boolean deleteEmployee(Long id);
 	public List<Employee> getAllEmployee();
+	public List<Employee> findBySalary();
 	
 
 }
